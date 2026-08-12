@@ -6,18 +6,16 @@ namespace Rimba\Hrm;
 
 use Rimba\Base\Services\BitesServiceProvider;
 
-
 class HrmServiceProvider extends BitesServiceProvider
 {
-
     protected function bootPackage(): void
     {
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         //
     }
+
     protected function registerPackage(): void
     {
         //
     }
-
 }
